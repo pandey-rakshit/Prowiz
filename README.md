@@ -12,11 +12,11 @@ Tasks **1–5** are implemented in separate folders, each with its own `README.m
 
 | Task   | Description                                                 | Link                    |
 | ------ | ----------------------------------------------------------- | ----------------------- |
-| Task 1 | Fetch and analyze API data using Python Requests            | [Open](task1/README.md) |
-| Task 2 | Parse HTML using BeautifulSoup and recursive Python parsing | [Open](task2/README.md) |
-| Task 3 | Build simple APIs using FastAPI                             | [Open](task3/README.md) |
-| Task 4 | Analyze the Global Electronics Retailer dataset             | [Open](task4/README.md) |
-| Task 5 | Solve SQL ranking problems (second topper scenarios)        | [Open](task5/README.md) |
+| Task 1 | Fetch and analyze API data using Python Requests            | [Open](task1/) |
+| Task 2 | Parse HTML using BeautifulSoup and recursive Python parsing | [Open](task2/) |
+| Task 3 | Build simple APIs using FastAPI                             | [Open](task3/) |
+| Task 4 | Analyze the Global Electronics Retailer dataset             | [Open](task4/) |
+| Task 5 | Solve SQL ranking problems (second topper scenarios)        | [Open](task5/) |
 | Task 6 | Project documentation and analysis notes                    | See docs             |
 
 ---
