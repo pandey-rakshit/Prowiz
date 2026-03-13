@@ -1,0 +1,171 @@
+{
+  "schema_issues": {},
+  "null_reports": {
+    "customers": [
+      {
+        "dataset": "customers",
+        "column": "State Code",
+        "nulls": 10,
+        "null_pct": 0.07
+      }
+    ],
+    "sales": [
+      {
+        "dataset": "sales",
+        "column": "Delivery Date",
+        "nulls": 49719,
+        "null_pct": 79.06
+      }
+    ],
+    "stores": [
+      {
+        "dataset": "stores",
+        "column": "Square Meters",
+        "nulls": 1,
+        "null_pct": 1.49
+      }
+    ]
+  },
+  "duplicates": {
+    "customers": {
+      "dataset": "customers",
+      "duplicate_rows": 0,
+      "subset": null
+    },
+    "data_dictionary": {
+      "dataset": "data_dictionary",
+      "duplicate_rows": 0,
+      "subset": null
+    },
+    "exchange_rates": {
+      "dataset": "exchange_rates",
+      "duplicate_rows": 0,
+      "subset": null
+    },
+    "products": {
+      "dataset": "products",
+      "duplicate_rows": 0,
+      "subset": null
+    },
+    "sales": {
+      "dataset": "sales",
+      "duplicate_rows": 0,
+      "subset": null
+    },
+    "stores": {
+      "dataset": "stores",
+      "duplicate_rows": 0,
+      "subset": null
+    }
+  },
+  "fk_checks": [
+    {
+      "check": "Sales->Customers",
+      "orphan_count": 0,
+      "sample": []
+    },
+    {
+      "check": "Sales->Products",
+      "orphan_count": 0,
+      "sample": []
+    },
+    {
+      "check": "Sales->Stores",
+      "orphan_count": 0,
+      "sample": []
+    }
+  ],
+  "date_coverage": {
+    "sales_range": "2016-01-01 to 2021-02-20",
+    "rates_range": "2015-01-01 to 2021-02-20",
+    "fully_covered": true
+  },
+  "negative_checks": [
+    {
+      "dataset": "products",
+      "column": "Unit Cost USD",
+      "negative_count": 0,
+      "negative_pct": 0.0
+    },
+    {
+      "dataset": "products",
+      "column": "Unit Price USD",
+      "negative_count": 0,
+      "negative_pct": 0.0
+    },
+    {
+      "dataset": "sales",
+      "column": "Quantity",
+      "negative_count": 0,
+      "negative_pct": 0.0
+    }
+  ],
+  "future_date_checks": [
+    {
+      "dataset": "customers",
+      "column": "Birthday",
+      "future_count": 0,
+      "future_pct": 0.0
+    },
+    {
+      "dataset": "sales",
+      "column": "Order Date",
+      "future_count": 0,
+      "future_pct": 0.0
+    },
+    {
+      "dataset": "sales",
+      "column": "Delivery Date",
+      "future_count": 82,
+      "future_pct": 0.13
+    }
+  ],
+  "range_checks": [],
+  "outlier_checks": [
+    {
+      "dataset": "products",
+      "column": "Unit Price USD",
+      "lower_bound": -442.5,
+      "upper_bound": 921.5,
+      "outlier_count": 200,
+      "outlier_pct": 7.95,
+      "outlier_min": 967.0,
+      "outlier_max": 3199.99
+    },
+    {
+      "dataset": "products",
+      "column": "Unit Cost USD",
+      "lower_bound": -195.3,
+      "upper_bound": 411.5,
+      "outlier_count": 183,
+      "outlier_pct": 7.27,
+      "outlier_min": 413.42,
+      "outlier_max": 1060.22
+    },
+    {
+      "dataset": "sales",
+      "column": "Quantity",
+      "lower_bound": -3.5,
+      "upper_bound": 8.5,
+      "outlier_count": 1808,
+      "outlier_pct": 2.88,
+      "outlier_min": "9",
+      "outlier_max": "10"
+    },
+    {
+      "dataset": "stores",
+      "column": "Square Meters",
+      "lower_bound": -228.12,
+      "upper_bound": 3336.88,
+      "outlier_count": 0,
+      "outlier_pct": 0.0,
+      "outlier_min": null,
+      "outlier_max": null
+    }
+  ],
+  "delivery_check": {
+    "invalid_delivery_count": 0,
+    "invalid_delivery_pct": 0.0,
+    "checked_rows": 13165
+  }
+}
